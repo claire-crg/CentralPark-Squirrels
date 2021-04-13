@@ -68,7 +68,7 @@
       var row = data[i];
 
       var marker = L.marker([row.Latitude, row.Longitude], {
-        opacity: 0.8,
+        opacity: 0.5,
         icon: L.icon({
         	iconUrl: 'icons/sq_holding_nut_dk_200px.png', iconSize: [40,60]})
       }).bindPopup("This type of squirrel was here:"+row.Age+"and"+row.Title);
