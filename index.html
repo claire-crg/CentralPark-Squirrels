@@ -31,7 +31,7 @@
   // Set up initial map center and zoom level
   var map = L.map('map', {
     center: [40.7968362004517, -73.95190469677475], // EDIT latitude, longitude to re-center map
-    zoom: 18,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    zoom: 17,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false,
     tap: false
   });
@@ -68,7 +68,7 @@
       var row = data[i];
 
       var marker = L.marker([row.Latitude, row.Longitude], {
-        opacity: 0.2,
+        opacity: 0.4,
         icon: L.icon({
         	iconUrl: 'icons/sq_holding_nut_dk_200px.png', iconSize: [40,60]})
       }).bindPopup("This type of squirrel was here:"+row.Age+"and"+row.Title);
